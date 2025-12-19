@@ -19,20 +19,32 @@
     <script src="../js/theme.js"></script>
     <style>
         /* Improved readability */
-        p, li, td, th {
+        p,
+        li,
+        td,
+        th {
             line-height: 1.8 !important;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             line-height: 1.4 !important;
         }
 
         /* Better text contrast in dark mode */
-        .dark p, .dark li {
+        .dark p,
+        .dark li {
             color: rgb(229, 231, 235) !important;
         }
 
-        .dark h1, .dark h2, .dark h3, .dark h4 {
+        .dark h1,
+        .dark h2,
+        .dark h3,
+        .dark h4 {
             color: rgb(255, 255, 255) !important;
         }
     </style>
@@ -427,45 +439,60 @@
                         <p class="text-sm text-gray-500 mt-2">برج التقطير التجزيئي يفصل النفط الخام إلى قطفات مختلفة
                             بناءً على درجة الغليان.</p>
                     </div>
-                    <div class="video-player-container relative group  mx-auto">
-                        <video muted playsinline class="custom-video w-full h-full rounded-lg">
-                            <source src="../videos/الفصل_العظيم__تكرير_النفط.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div
-                            class="video-controls absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="play-pause-btn text-white">
-                                <svg class="play-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <svg class="pause-icon h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </button>
-                            <input type="range" min="0" max="100" value="0" class="progress-bar w-full mx-4">
-                            <button class="mute-btn text-white">
-                                <svg class="volume-on-icon h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
-                                    </path>
-                                </svg>
-                                <svg class="volume-off-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 14l-4-4m0 4l4-4"></path>
-                                </svg>
-                            </button>
+                    <!-- Video Section - Oil Refining -->
+                    <div
+                        class="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-xl shadow-lg p-6 mb-8 border-2 border-orange-300 dark:border-orange-700">
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center">
+                            <svg class="w-8 h-8 mr-3 text-orange-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            فيديو: الفصل العظيم - تكرير النفط
+                        </h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            شاهد شرحاً مفصلاً لعملية التقطير التجزيئي وكيفية فصل النفط الخام إلى مكوناته
+                        </p>
+                        <div class="video-player-container relative group">
+                            <video id="alkanes-refining-video" muted playsinline
+                                class="custom-video w-full h-full rounded-lg shadow-md">
+                                <source src="../videos/الفصل_العظيم__تكرير_النفط.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div
+                                class="video-controls absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-lg">
+                                <button id="play-pause-alkanes-ref"
+                                    class="play-pause-btn text-white hover:text-orange-400 transition-colors">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                    </svg>
+                                </button>
+                                <div class="flex-1 mx-4">
+                                    <input id="progress-alkanes-ref" type="range" min="0" max="100" value="0"
+                                        class="w-full h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer slider">
+                                </div>
+                                <span id="time-alkanes-ref" class="text-white text-sm mr-2">0:00 / 0:00</span>
+                                <button id="mute-alkanes-ref"
+                                    class="mute-btn text-white hover:text-orange-400 transition-colors mr-2">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button id="speed-alkanes-ref"
+                                    class="text-white hover:text-orange-400 transition-colors text-sm mr-2">1x</button>
+                                <button id="fullscreen-alkanes-ref"
+                                    class="fullscreen-btn text-white hover:text-orange-400 transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -488,10 +515,46 @@
                         يتم إضافة جزيء هيدروجين (H₂) إلى الرابطة الثنائية (C=C) في الألكين بوجود عامل حفاز (Catalyst)
                         مثل النيكل (Ni) أو البلاتين (Pt) أو البلاديوم (Pd) تحت ضغط وحرارة.
                     </p>
-                    <p class="mt-2 font-semibold text-gray-600 dark:text-gray-400">المعادلة العامة:</p>
-                    <pre dir="ltr"><code>R-CH=CH-R' + H₂ --(حفاز)--> R-CH₂-CH₂-R'</code></pre>
-                    <p class="mt-2 font-semibold text-gray-600 dark:text-gray-400">مثال: تحضير الإيثان من الإيثين.</p>
-                    <pre dir="ltr"><code>CH₂=CH₂ (إيثين) + H₂ --(Ni, حرارة)--> CH₃–CH₃ (إيثان)</code></pre>
+                    <p class="mt-4 font-semibold text-gray-700 dark:text-gray-300 text-lg">المعادلة العامة:</p>
+                    <div
+                        class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-800 rounded-xl p-6 my-4 border-2 border-blue-200 dark:border-blue-800 shadow-md">
+                        <div class="flex flex-wrap items-center justify-center gap-3 text-2xl font-mono" dir="ltr">
+                            <span class="text-blue-600 dark:text-blue-400 font-bold">R—CH═CH—R'</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-xl font-bold">+</span>
+                            <span class="text-green-600 dark:text-green-400 font-bold">H₂</span>
+                            <div class="flex flex-col items-center mx-2">
+                                <span class="text-orange-600 dark:text-orange-400 text-sm font-bold mb-1">حفاز (Ni / Pt
+                                    / Pd)</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-3xl">→</span>
+                                <span class="text-red-600 dark:text-red-400 text-sm font-bold mt-1">حرارة وضغط</span>
+                            </div>
+                            <span class="text-purple-600 dark:text-purple-400 font-bold">R—CH₂—CH₂—R'</span>
+                        </div>
+                    </div>
+
+                    <p
+                        class="mt-6 font-bold text-teal-700 dark:text-teal-300 text-lg bg-teal-50 dark:bg-teal-900/30 p-3 rounded-lg border-r-4 border-teal-500">
+                        💡 مثال: تحضير الإيثان من الإيثين</p>
+                    <div
+                        class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-700 dark:to-gray-800 rounded-xl p-6 my-4 border-2 border-green-200 dark:border-green-800 shadow-md">
+                        <div class="flex flex-wrap items-center justify-center gap-3 text-2xl font-mono" dir="ltr">
+                            <div class="text-center">
+                                <span class="text-blue-600 dark:text-blue-400 font-bold">CH₂═CH₂</span>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">(إيثين)</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-400 text-xl font-bold">+</span>
+                            <span class="text-green-600 dark:text-green-400 font-bold">H₂</span>
+                            <div class="flex flex-col items-center mx-2">
+                                <span class="text-orange-600 dark:text-orange-400 text-sm font-bold mb-1">Ni</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-3xl">→</span>
+                                <span class="text-red-600 dark:text-red-400 text-sm font-bold mt-1">حرارة</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-purple-600 dark:text-purple-400 font-bold">CH₃—CH₃</span>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">(إيثان)</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="my-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm text-center">
                         <img src="../images/هدرجة.jpeg" alt="رسم توضيحي لبرج التقطير التجزيئي"
                             class="mt-2 rounded-lg shadow-sm mx-auto w-full max-w-lg">
@@ -503,55 +566,105 @@
                         يمكن أيضًا هدرجة الألكاينات (التي تحتوي رابطة ثلاثية C≡C) لإنتاج الألكانات. يتطلب التفاعل ضعف
                         كمية الهيدروجين (2 مول) لإشباع الرابطة الثلاثية بالكامل.
                     </p>
-                    <p class="mt-2 font-semibold text-gray-600 dark:text-gray-400">المعادلة العامة:</p>
-                    <pre dir="ltr"><code>R-C≡C-R' + 2 H₂ --(حفاز)--> R-CH₂-CH₂-R'</code></pre>
-                    <p class="mt-2 font-semibold text-gray-600 dark:text-gray-400">مثال: تحضير البروبان من البروباين.
-                    </p>
-                    <pre dir="ltr"><code>CH₃-C≡CH (بروباين) + 2 H₂ --(Pd)--> CH₃-CH₂-CH₃ (بروبان)</code></pre>
+                    <p class="mt-6 font-semibold text-gray-700 dark:text-gray-300 text-lg">المعادلة العامة:</p>
+                    <div
+                        class="bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-gray-700 dark:to-gray-800 rounded-xl p-6 my-4 border-2 border-indigo-200 dark:border-indigo-800 shadow-md">
+                        <div class="flex flex-wrap items-center justify-center gap-3 text-2xl font-mono" dir="ltr">
+                            <span class="text-blue-600 dark:text-blue-400 font-bold">R—C≡C—R'</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-xl font-bold">+</span>
+                            <span class="text-green-600 dark:text-green-400 font-bold">2 H₂</span>
+                            <div class="flex flex-col items-center mx-2">
+                                <span class="text-orange-600 dark:text-orange-400 text-sm font-bold mb-1">حفاز (Pd /
+                                    Pt)</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-3xl">→</span>
+                                <span class="text-red-600 dark:text-red-400 text-sm font-bold mt-1">حرارة وضغط</span>
+                            </div>
+                            <span class="text-purple-600 dark:text-purple-400 font-bold">R—CH₂—CH₂—R'</span>
+                        </div>
+                    </div>
+
+                    <p
+                        class="mt-6 font-bold text-teal-700 dark:text-teal-300 text-lg bg-teal-50 dark:bg-teal-900/30 p-3 rounded-lg border-r-4 border-teal-500">
+                        💡 مثال: تحضير البروبان من البروباين</p>
+                    <div
+                        class="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-gray-700 dark:to-gray-800 rounded-xl p-6 my-4 border-2 border-yellow-200 dark:border-yellow-800 shadow-md">
+                        <div class="flex flex-wrap items-center justify-center gap-3 text-2xl font-mono" dir="ltr">
+                            <div class="text-center">
+                                <span class="text-blue-600 dark:text-blue-400 font-bold">CH₃—C≡CH</span>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">(بروباين)</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-400 text-xl font-bold">+</span>
+                            <span class="text-green-600 dark:text-green-400 font-bold">2 H₂</span>
+                            <div class="flex flex-col items-center mx-2">
+                                <span class="text-orange-600 dark:text-orange-400 text-sm font-bold mb-1">Pd</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-3xl">→</span>
+                                <span class="text-red-600 dark:text-red-400 text-sm font-bold mt-1">حرارة</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-purple-600 dark:text-purple-400 font-bold">CH₃—CH₂—CH₃</span>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">(بروبان)</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="my-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm text-center">
                         <img src="../images/هدرجة2.png" alt="رسم توضيحي لبرج التقطير التجزيئي"
                             class="mt-2 rounded-lg shadow-sm mx-auto w-full max-w-lg">
                     </div>
-                    <div class="video-player-container relative group">
-                        <video muted autoplay playsinline class="custom-video w-full h-full rounded-lg">
-                            <source src="../videos/x.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div
-                            class="video-controls absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="play-pause-btn text-white">
-                                <svg class="play-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <svg class="pause-icon h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </button>
-                            <input type="range" min="0" max="100" value="0" class="progress-bar w-full mx-4">
-                            <button class="mute-btn text-white">
-                                <svg class="volume-on-icon h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
-                                    </path>
-                                </svg>
-                                <svg class="volume-off-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 14l-4-4m0 4l4-4"></path>
-                                </svg>
-                            </button>
+                    <!-- Video Section - Hydrogenation -->
+                    <div
+                        class="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl shadow-lg p-6 mb-8 border-2 border-teal-300 dark:border-teal-700">
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center">
+                            <svg class="w-8 h-8 mr-3 text-teal-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            فيديو: شرح الهدرجة
+                        </h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            فيديو تعليمي يوضح عملية هدرجة الألكينات والألكاينات لتحضير الألكانات
+                        </p>
+                        <div class="video-player-container relative group">
+                            <video id="alkanes-hydro-video" muted playsinline
+                                class="custom-video w-full h-full rounded-lg shadow-md">
+                                <source src="../videos/x.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div
+                                class="video-controls absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-lg">
+                                <button id="play-pause-alkanes-hydro"
+                                    class="play-pause-btn text-white hover:text-teal-400 transition-colors">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                    </svg>
+                                </button>
+                                <div class="flex-1 mx-4">
+                                    <input id="progress-alkanes-hydro" type="range" min="0" max="100" value="0"
+                                        class="w-full h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer slider">
+                                </div>
+                                <span id="time-alkanes-hydro" class="text-white text-sm mr-2">0:00 / 0:00</span>
+                                <button id="mute-alkanes-hydro"
+                                    class="mute-btn text-white hover:text-teal-400 transition-colors mr-2">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button id="speed-alkanes-hydro"
+                                    class="text-white hover:text-teal-400 transition-colors text-sm mr-2">1x</button>
+                                <button id="fullscreen-alkanes-hydro"
+                                    class="fullscreen-btn text-white hover:text-teal-400 transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
